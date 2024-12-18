@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_2/octa_image_class.dart';
+import 'package:flutter_project_2/others/octa_image_class.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // code added to manifest in android and info.plist in ios
@@ -19,8 +19,8 @@ class _SendSmsAndMailState extends State<SendSmsAndMail> {
     return Scaffold(
       appBar: AppBar(
         actions: [IconButton(onPressed: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=> OctaImageClass()));
-        }, icon: Icon(Icons.next_plan))],
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> const OctaImageClass()));
+        }, icon: const Icon(Icons.next_plan))],
         title: const Text(" Send SMS or Mail"),
       ),
       body: Center(
@@ -73,7 +73,7 @@ class _SendSmsAndMailState extends State<SendSmsAndMail> {
     String body="[name] is inviting you to join chat app and chat";
   var url = Uri(
       scheme: 'mailto',
-      path: "${emailController.text}",
+      path: emailController.text,
       queryParameters: {
         'subject': "Invitation",
         'body'  : body
@@ -92,7 +92,7 @@ class _SendSmsAndMailState extends State<SendSmsAndMail> {
   //OR
    var url = Uri(
       scheme: 'sms',
-      path: "${numController.text}",
+      path: numController.text,
       queryParameters: {
         'body'  : "[name] is inviting you to join Chat App and chat"
       },

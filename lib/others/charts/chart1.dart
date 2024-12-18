@@ -34,7 +34,7 @@ class _Chart1State extends State<Chart1> {
             title: const ChartTitle(text: "LineSeries [SfCartesianChart]"),
               series: <LineSeries<Infections,String>>[
                 LineSeries<Infections,String>(
-                  dataSource:<Infections> [
+                  dataSource:const <Infections> [
                    
                   ],
                   xValueMapper: (Infections victims,_) => victims.month, // values along x axis
@@ -49,7 +49,7 @@ class _Chart1State extends State<Chart1> {
             
             ),
             //2
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SfCircularChart( 
            selectionGesture: ActivationMode.singleTap,
            

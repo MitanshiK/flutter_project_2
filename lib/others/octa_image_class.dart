@@ -28,12 +28,12 @@ class _OctaImageClassState extends State<OctaImageClass> {
             //          fit: BoxFit.cover,
             //        ),
             //  ),
-             SizedBox(height: 30,),
+             const SizedBox(height: 30,),
              SizedBox(
     height: 200,
     width: 200,
     child: OctoImage(
-      image: NetworkImage('https://firebasestorage.googleapis.com/v0/b/flutter1-a89ae.appspot.com/o/ProfilePictures%2F26378990-670a-1067-80c1-6bb7cd4bcf3a?alt=media&token=414b0197-444d-4ee8-b423-d763f15e832c'),
+      image: const NetworkImage('https://firebasestorage.googleapis.com/v0/b/flutter1-a89ae.appspot.com/o/ProfilePictures%2F26378990-670a-1067-80c1-6bb7cd4bcf3a?alt=media&token=414b0197-444d-4ee8-b423-d763f15e832c'),
       progressIndicatorBuilder: (context, progress) {
         double value;
         if (progress != null && progress.expectedTotalBytes != null) {
@@ -44,9 +44,9 @@ class _OctaImageClassState extends State<OctaImageClass> {
         }
         return CircularProgressIndicator(value: value);
       },
-      errorBuilder: (context, error, stacktrace) => Icon(Icons.error),
-    ),
-  )
+      errorBuilder: (context, error, stacktrace) => const Icon(Icons.error),
+      ),
+      )
           ],
         ),),
     );

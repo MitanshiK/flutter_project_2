@@ -35,9 +35,38 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
-  url_launcher: ^6.3.0
-  octo_image: ^2.1.0
-  syncfusion_flutter_charts: ^26.2.8
+  url_launcher: ^6.3.1
+  syncfusion_flutter_charts: ^28.1.33
+
+  firebase_core: ^3.4.1
+  firebase_auth: ^5.2.1
+  get_it: ^8.0.2
+  bloc: ^8.1.4
+  injectable: ^2.4.4
+  json_annotation: ^4.9.0
+  auto_route: ^9.2.2
+  
+  speech_to_text: ^7.0.0
+  highlight_text: ^1.8.0
+  avatar_glow: ^3.0.1
+  rxdart: ^0.28.0
+  flex_color_scheme: ^8.0.2
+  cached_network_image: ^3.4.1
+  intl: ^0.19.0
+  icony: ^1.0.5
+  logger: ^2.5.0
+  google_fonts: ^6.2.1
+  remixicon: ^1.3.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+  http: ^1.2.2
+  sqflite: ^2.4.1
+  webview_flutter: ^4.10.0
+  webview_flutter_android: ^4.2.0
+  webview_flutter_wkwebview: ^3.16.3
+
 
 dev_dependencies:
   flutter_test:
@@ -48,8 +77,8 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
-
+  flutter_lints: ^5.0.0
+  injectable_generator: ^2.6.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

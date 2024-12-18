@@ -46,7 +46,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 <!-- for sms -->
-	<key>LSApplicationQueriesSchemes</key>
+<key>LSApplicationQueriesSchemes</key>
 <array>
   <string>sms</string>
   <string>tel</string>
